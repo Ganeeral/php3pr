@@ -69,16 +69,15 @@
     }
 }
 
-// Класс-наследник Lion
 class Lion extends Animal {
-    private $maneLength; // уникальное свойство
+    private $maneLength; 
 
     public function __construct($weight, $age, $color, $maneLength) {
         parent::__construct($weight, $age, $color);
         $this->maneLength = $maneLength;
     }
 
-    public function roar() { // уникальный метод
+    public function roar() { 
         return "Рык льва с длиной гривы $this->maneLength см!";
     }
 
@@ -87,16 +86,15 @@ class Lion extends Animal {
     }
 }
 
-// Класс-наследник Rabbit
 class Rabbit extends Animal {
-    private $earLength; // уникальное свойство
+    private $earLength; 
 
     public function __construct($weight, $age, $color, $earLength) {
         parent::__construct($weight, $age, $color);
         $this->earLength = $earLength;
     }
 
-    public function hop() { // уникальный метод
+    public function hop() {
         return "Кролик прыгает с длиной ушей $this->earLength см!";
     }
 
@@ -105,16 +103,15 @@ class Rabbit extends Animal {
     }
 }
 
-// Класс-наследник Wolf
 class Wolf extends Animal {
-    private $packSize; // уникальное свойство
+    private $packSize; 
 
     public function __construct($weight, $age, $color, $packSize) {
         parent::__construct($weight, $age, $color);
         $this->packSize = $packSize;
     }
 
-    public function howl() { // уникальный метод
+    public function howl() { 
         return "Волк воет в стае размером $this->packSize!";
     }
 
@@ -123,7 +120,6 @@ class Wolf extends Animal {
     }
 }
 
-// Создаем объекты
 $lion = new Lion(190, 5, 'золотистый', 30);
 $rabbit = new Rabbit(2, 1, 'белый', 10);
 $wolf = new Wolf(50, 3, 'серый', 7);
